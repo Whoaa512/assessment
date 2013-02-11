@@ -1,0 +1,13 @@
+Stack
+---------
+
+A stack is data structure where you can add items to a pile to be accessed later, however, you can only access the top item at any given time. If you wish to get something farther down the stack you have to remove all the items above the item you need. A stack is essentially a list that restricts operations to on end, in this case the top or front.
+
+Use Cases: you might want to use a stack as a temporary storage for certain data, similar to "git stash"
+
+Queue
+---------
+
+A queue is a data structure analagous to a beads on a string. You can add items to one side and remove them from the other. A queue, similar to a stack, is a list that restricts operations, however, a queue only allows you to add items to the front(head) or remove them from the back(tail).
+
+Use Cases: you might use a queue when you need access data in a particular order.

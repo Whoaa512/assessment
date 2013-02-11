@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>BackBone Todo's</title>
+ </head>
+ <body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/backbone.js"></script>
+  <script src="js/taskListView.js"></script>
+  <script src="js/taskEntryView.js"></script>
+  <script src="js/tasksModel.js"></script>
+
+  <script type="text/javascript">
+  	$(function() {
+  		var tasks = new Tasks();
+  		var taskListView = new TaskListView({collection: tasks});
+
+  		$('body').append(
+  				// taskListView.render();
+  			);
+  	});
+  </script>
+  
+  <div class='header'>
+  	<fieldset>
+	  	<form>
+	  		<legend>Task to be Added</legend>
+	  		<textarea name="task-text" rows='4' cols='28'></textarea>
+	  		<input id='add' type='button' value='Submit' />
+	  	</form>
+		</fieldset>
+  </div>
+  <div class='task-list'></div>
+
+ </body>
+</html>
